@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.ManageCampaignsController">
+   <children>
+       <JFXButton fx:id="close" minWidth="-Infinity" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Close" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ListView fx:id="currentCampaigns" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="deleteCampaign" mnemonicParsing="false" text="Delete Campaign" />
+            <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="newCampaignName" minWidth="-Infinity" promptText="Campaign name" />
+                  <ComboBox fx:id="selectClient" prefWidth="150.0" />
+                  <JFXButton fx:id="addCampaign" minWidth="-Infinity" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Add new campaign" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <ListView fx:id="currentClients" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="deleteClient" layoutX="235.0" layoutY="148.0" mnemonicParsing="false" text="Delete Client" />
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="184.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="newClientName" minWidth="-Infinity" promptText="Client name" />
+                  <PasswordField fx:id="newClientPassword" promptText="Client Password" />
+                  <JFXButton fx:id="addClient" minWidth="-Infinity" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Add new client" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

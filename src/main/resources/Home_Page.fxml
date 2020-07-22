@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="basePane" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.HomePageController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: #c9c9c9;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane fx:id="borderPane1" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane fx:id="anchorPane1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <bottom>
+                              <AnchorPane prefHeight="30.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="editButton1" layoutX="217.5" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Edit" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="deleteButton1" layoutX="328.0" mnemonicParsing="false" prefWidth="120.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="addButton1" layoutX="272.5" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <BorderPane fx:id="borderPane2" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <bottom>
+                              <AnchorPane prefHeight="30.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="addButton2" layoutX="272.5" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="editButton2" layoutX="217.5" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Edit " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="deleteButton2" layoutX="328.0" mnemonicParsing="false" prefWidth="120.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Delete " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <BorderPane fx:id="borderPane3" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <bottom>
+                              <AnchorPane prefHeight="30.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="addButton3" layoutX="272.5" layoutY="-2.0" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="editButton3" layoutX="217.5" layoutY="-2.0" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Edit " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="deleteButton3" layoutX="328.0" layoutY="-2.0" mnemonicParsing="false" prefWidth="120.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Delete " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <BorderPane fx:id="borderPane4" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                           <bottom>
+                              <AnchorPane prefHeight="30.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="addButton4" layoutX="272.5" layoutY="-2.0" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="+" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="editButton4" layoutX="217.5" layoutY="-2.0" mnemonicParsing="false" prefWidth="100.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Edit " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                    <JFXButton fx:id="deleteButton4" layoutX="328.0" layoutY="-2.0" mnemonicParsing="false" prefWidth="120.0" style="-jfx-button-type: RAISED; -fx-background-color: #0177D7;" text="Delete " textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #0177D7;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="0.0" prefWidth="200.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="8.0">
+                     <children>
+                        <Label minWidth="-Infinity" text="Import data into" textFill="WHITE" />
+                        <ComboBox fx:id="importCampaignId" minWidth="-Infinity" promptText="Select Campaign" />
+                        <JFXButton fx:id="importCSVButton" minWidth="-Infinity" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Import CSV" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <JFXButton fx:id="manageCampaigns" minWidth="-Infinity" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Manage Campaigns" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+
+                   <MenuBar fx:id="menu" layoutX="1095.5" layoutY="7.0">
+                       <Menu text="File">
+                           <MenuItem fx:id="exportAllGraphs" onAction="#saveAllGraph" text="Export All Graphs" />
+                           <Menu text="Export Graph">
+                                <MenuItem fx:id="exportGraph1" onAction="#saveGraph" text="Graph1" />
+                                <MenuItem fx:id="exportGraph2" onAction="#saveGraph" text="Graph2" />
+                                <MenuItem fx:id="exportGraph3" onAction="#saveGraph" text="Graph3" />
+                                <MenuItem fx:id="exportGraph4" onAction="#saveGraph" text="Graph4" />
+                           </Menu>
+                           <Menu text="Print Graph">
+                               <MenuItem fx:id="printGraph1" onAction="#printGraph" text="Graph1" />
+                               <MenuItem fx:id="printGraph2" onAction="#printGraph" text="Graph2" />
+                               <MenuItem fx:id="printGraph3" onAction="#printGraph" text="Graph3" />
+                               <MenuItem fx:id="printGraph4" onAction="#printGraph" text="Graph4" />
+                           </Menu>
+
+                       </Menu>
+                   </MenuBar>
+
+                  <JFXButton fx:id="logoutButton" layoutX="1240.0" layoutY="7.0" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Logout" />
+                  <JFXButton fx:id="settingsButton" layoutX="1163.0" layoutY="7.0" mnemonicParsing="false" style="-jfx-button-type: RAISED; -fx-background-color: white;" text="Settings" />
+                  <ImageView fitHeight="100.0" fitWidth="72.0" layoutX="618.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="355.0" prefWidth="5.0" style="-fx-background-color: #0177D7;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="355.0" prefWidth="5.0" style="-fx-background-color: #0177D7;" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
